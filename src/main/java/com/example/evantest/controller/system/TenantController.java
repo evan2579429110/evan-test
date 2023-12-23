@@ -1,7 +1,7 @@
 package com.example.evantest.controller.system;
 
 
-import com.example.evantest.service.TenantService;
+import com.example.evantest.service.ITenantService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ public class TenantController {
 
 
     @Autowired
-    private TenantService tenantService;
+    private ITenantService tenantService;
 
     /**
      * @Desc: 租户列表
